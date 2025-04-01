@@ -1,4 +1,4 @@
-import logo from "HQDetailers/src/assets/images/Image.jpeg"; // Adjust path if needed
+import logo from "../assets/images/Image.jpeg"; 
 
 function Header() {
   return (
