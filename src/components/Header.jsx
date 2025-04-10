@@ -1,12 +1,16 @@
-import logo from "../assets/images/Image.jpeg"; 
+import React from 'react';
+import logo from '../assets/images/Image.jpeg'; // Adjust path as needed
 
 function Header() {
   return (
-    <header>
-      <img src={logo} alt="HQ Detailers Logo" style={{ width: "150px", height: "auto" }} />
+    <header style={{ backgroundColor: '#1a1a1a', padding: '1rem' }}>
+      <img
+        src={logo}
+        alt="HQ Detailers Logo"
+        style={{ width: '150px', height: 'auto' }}
+      />
     </header>
   );
 }
 
 export default Header;
-
