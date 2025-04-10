@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/Image.jpeg'; // Adjust path as needed
+import logo from './src/assets/images/Image.jpeg'; // Adjust path as needed
 
 function Header() {
   return (
