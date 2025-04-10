@@ -1,0 +1,13 @@
+.payment-placeholder {
+  padding: 2rem;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  border: 1px dashed #555;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.payment-placeholder h2 {
+  margin-bottom: 1rem;
+}
