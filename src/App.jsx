@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Booking from "./components/Booking";
+import Header from "./src/components/Header";
+import Navbar from "./src/components/Navbar";
+import Home from "./src/components/Home";
+import Services from "./src/components/Services";
+import Portfolio from "./src/components/Portfolio";
+import Contact from "./src/components/Contact";
+import Booking from "./src/components/Booking";
 import "./App.css";
 
 function App() {
