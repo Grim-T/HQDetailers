@@ -6,7 +6,7 @@ import Services from "./src/components/Services.jsx";
 import Portfolio from "./src/components/Portfolio.jsx";
 import Contact from "./src/components/Contact.jsx";
 import Booking from "./src/components/Booking.jsx";
-import "./App.css";
+import "./src/App.css";
 
 function App() {
   const [activePage, setActivePage] = useState("Home");
