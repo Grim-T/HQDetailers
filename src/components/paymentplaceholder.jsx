@@ -1,5 +1,5 @@
 import React from "react";
-import "./PaymentPlaceholder.css";
+// import "./PaymentPlaceholder.css";
 
 function PaymentPlaceholder() {
   return (
