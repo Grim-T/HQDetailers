@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from './components/Home';
+import "./Booking.css";
 
 function Booking() {
   const [selectedDate, setSelectedDate] = useState("");
