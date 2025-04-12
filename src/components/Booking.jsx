@@ -8,7 +8,7 @@ function Booking() {
       <form className="booking-form">
         <label>
           Full Name:
-          <input type="text" name="fullName" placeholder="John Doe" required />
+          <input type="text" name="fullName" placeholder="John Smith" required />
         </label>
         <label>
           Email:
@@ -16,7 +16,7 @@ function Booking() {
         </label>
         <label>
           Phone Number:
-          <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+          <input type="tel" name="phone" placeholder="(+44)74567890" required />
         </label>
         <label>
           Preferred Date:
