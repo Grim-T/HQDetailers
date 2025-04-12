@@ -4,11 +4,23 @@ function Navbar({ setActivePage }) {
   return (
     <nav className="navbar">
       <ul>
-        <button <li onClick={() => setActivePage("Home")}>>Home</li></button>
-        <li onClick={() => setActivePage("Services")}>Services</li>
-        <li onClick={() => setActivePage("Portfolio")}>Portfolio</li>
-        <li onClick={() => setActivePage("Contact")}>Contact</li>
-        <li onClick={() => setActivePage("Booking")}>Booking</li>
+      
+  <li>
+    <button onClick={() => setActivePage("Home")}>Home</button>
+  </li>
+  <li>
+    <button onClick={() => setActivePage("Services")}>Services</button>
+  </li>
+  <li>
+    <button onClick={() => setActivePage("Portfolio")}>Portfolio</button>
+  </li>
+  <li>
+    <button onClick={() => setActivePage("Contact")}>Contact</button>
+  </li>
+  <li>
+    <button onClick={() => setActivePage("Booking")}>Booking</button>
+  </li>
+
       </ul>
     </nav>
   );
