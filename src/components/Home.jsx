@@ -6,7 +6,7 @@ function Home() {
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Welcome to HQ Detailers</h1>
+          <h1>Welcome to HQ Detailer</h1>
           <p>The Premium car detailing that brings your vehicle back to life.</p>
           <button className="book-now-btn">Book Now</button>
         </div>
