@@ -1,24 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Booking.css";
 
 function Booking() {
-  const [selectedDate, setSelectedDate] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
-
-  const handleBooking = () => {
-    if (selectedDate) {
-      setSuccessMessage(`Booking confirmed for ${selectedDate}`);
-    } else {
-      alert("Please select a date.");
-    }
-  };
-
   return (
-    <div className="booking">
-      <h2>Book a Detailing Slot</h2>
-      <input type="date" onChange={(e) => setSelectedDate(e.target.value)} />
-      <button onClick={handleBooking}>Book Now - £15</button>
-      {successMessage && <p className="success">{successMessage}</p>}
+    <div className="booking-container">
+      <h1>Book a Detailing Appointment</h1>
+      <form className="booking-form">
+        <label>
+          Full Name:
+          <input type="text" name="fullName" placeholder="John Doe" required />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="john@example.com" required />
+        </label>
+        <label>
+          Phone Number:
+          <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+        </label>
+        <label>
+          Preferred Date:
+          <input type="date" name="date" required />
+        </label>
+        <label>
+          Service Type:
+          <select name="service">
+            <option value="interior">Interior Detail</option>
+            <option value="exterior">Exterior Detail</option>
+            <option value="full">Full Detail</option>
+          </select>
+        </label>
+        <button type="submit" className="submit-button">Submit Booking</button>
+      </form>
     </div>
   );
 }
