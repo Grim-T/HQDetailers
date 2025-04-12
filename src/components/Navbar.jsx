@@ -4,7 +4,7 @@ function Navbar({ setActivePage }) {
   return (
     <nav className="navbar">
       <ul>
-        <li onClick={() => setActivePage("Home")}>Home</li>
+        <button <li onClick={() => setActivePage("Home")}>>Home</li></button>
         <li onClick={() => setActivePage("Services")}>Services</li>
         <li onClick={() => setActivePage("Portfolio")}>Portfolio</li>
         <li onClick={() => setActivePage("Contact")}>Contact</li>
