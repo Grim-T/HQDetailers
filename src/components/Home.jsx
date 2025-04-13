@@ -25,7 +25,7 @@ function Home() {
         <div className="card">
           <div className="card-img img-3"></div>
           <h2>Mobile Service</h2>
-          <p>We bring our professional service straight to your driveway, saving you time.</p>
+          <p>We come to you — whether at home, work, or anywhere in between.</p>
         </div>
       </section>
     </div>
