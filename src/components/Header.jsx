@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/Image.jpeg'; 
-import Header from './components/Header.css';
+import './components/Header.css';
 <img src={logo} alt="HQ Detailers Logo" className="logo" />
 function Header() {
   return (
