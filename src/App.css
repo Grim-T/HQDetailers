@@ -1,20 +1,77 @@
+/* Global reset and base styling */
 body {
   margin: 0;
-  padding: 0;
-  background-color: #1c1c1c; /* Graphite black */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
   color: white;
-  font-family: Arial, sans-serif;
 }
 
-header {
-  background: black;
-  padding: 20px;
-  text-align: center;
+/* Navbar styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
 }
 
+nav li {
+  display: inline;
+}
+
+nav li button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.5rem 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav li button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Header logo */
 .logo {
-  width: 200px;
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
 
+/* Main content */
+main {
+  padding: 2rem;
+}
 
- 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav li button {
+    width: 80%;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
