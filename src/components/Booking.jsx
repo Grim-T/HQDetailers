@@ -16,7 +16,7 @@ function Booking() {
         </label>
         <label>
           Phone Number:
-          <input type="tel" name="phone" placeholder="(+44)74567890" required />
+          <input type="tel" name="phone" placeholder="(+44) 7456 789017" required />
         </label>
         <label>
           Preferred Date:
