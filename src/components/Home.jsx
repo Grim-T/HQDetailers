@@ -1,35 +1,38 @@
 import React from "react";
 import "./Home.css";
 
+import exteriorImg from "../assets/exterior.jpg";
+import interiorImg from "../assets/interior.jpg";
+import mobileImg from "../assets/mobile.jpg";
+
 function Home() {
   return (
-    <section className="home">
-      <div className="hero">
+    <div className="home-container">
+      <section className="hero">
         <h1>Welcome to HQ Detailers</h1>
-        <p>Premium car detailing with unmatched attention to detail.</p>
-        <button className="cta-button">Book Now</button>
-      </div>
+        <p>Your go-to destination for premium auto detailing services.</p>
+      </section>
 
-      <div className="features">
-        <div className="feature">
-          <img src="/assets/images/placeholder1.jpg" alt="Interior Detailing" />
-          <h3>Interior Perfection</h3>
-          <p>Deep-clean and restore every inch of your car’s interior.</p>
+      <section className="card-section">
+        <div className="card">
+          <img src={exteriorImg} alt="Exterior Detailing" />
+          <h2>Exterior Perfection</h2>
+          <p>From hand washes to ceramic coatings, we make your car shine like new.</p>
         </div>
 
-        <div className="feature">
-          <img src="/assets/images/placeholder2.jpg" alt="Exterior Shine" />
-          <h3>Exterior Excellence</h3>
-          <p>High-gloss finish, scratch removal, and protection.</p>
+        <div className="card">
+          <img src={interiorImg} alt="Interior Detailing" />
+          <h2>Interior Detailing</h2>
+          <p>Deep cleaning, shampoo, and leather care that revives your car’s interior.</p>
         </div>
 
-        <div className="feature">
-          <img src="/assets/images/placeholder3.jpg" alt="Premium Packages" />
-          <h3>Premium Packages</h3>
-          <p>Tailored packages to meet every client's needs.</p>
+        <div className="card">
+          <img src={mobileImg} alt="Mobile Service" />
+          <h2>Mobile Service</h2>
+          <p>We bring our professional service straight to your driveway, saving you time.</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
