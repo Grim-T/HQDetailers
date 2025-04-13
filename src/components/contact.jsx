@@ -15,6 +15,7 @@ function Contact() {
 
   return (
     <div className="contact">
+      <p1> For any inquiries please call 07404 800460 and we will be happy to assist you with any questions or inquiries you may have</p1>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="Your Name" onChange={handleChange} required />
