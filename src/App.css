@@ -1,77 +1,77 @@
-/* Global reset and base styling */
+/* Reset & Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
-  color: white;
+  color: #f0f0f0;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Navbar styling */
-nav ul {
+.navbar {
+  background-color: #1f1f1f;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
+}
+
+.navbar ul {
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
   gap: 1rem;
 }
 
-nav li {
+.navbar li {
   display: inline;
 }
 
-nav li button {
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 0.5rem 1.2rem;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+.navbar button {
+  background: none;
+  border: none;
+  color: #f0f0f0;
   font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+  border-radius: 6px;
 }
 
-nav li button:hover {
-  background-color: white;
-  color: black;
+.navbar button:hover {
+  background-color: #333;
 }
 
-/* Header logo */
-.logo {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-}
-
-/* Main content */
+/* Main content area */
 main {
+  flex: 1;
   padding: 2rem;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-  nav ul {
+  .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
   }
 
-  nav li button {
-    width: 80%;
-    font-size: 0.95rem;
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
 
   main {
     padding: 1rem;
   }
 
-  h1, h2, h3 {
-    font-size: 1.2rem;
+  .navbar button {
+    width: 100%;
     text-align: center;
-  }
-
-  .logo {
-    width: 100px;
   }
 }
