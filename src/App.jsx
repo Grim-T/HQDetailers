@@ -6,15 +6,10 @@ import Services from "./components/services.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/contact.jsx";
 import Booking from "./components/Booking.jsx";
+import Footer from "./components/Footer";
 import "./App.css";
-import Footer from "./components/Footer"; 
+ 
 
-
-<div className="App">
-  <Navbar setActivePage={setActivePage} />
-  {renderPage()}
-  <Footer />
-</div>
 function App() {
   const [activePage, setActivePage] = useState("Home");
 
@@ -40,6 +35,7 @@ function App() {
       <Header />
       <Navbar setActivePage={setActivePage} />
       <main>{renderPage()}</main>
+      <Footer />
     </div>
   );
 }
