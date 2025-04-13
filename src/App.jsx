@@ -7,7 +7,14 @@ import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/contact.jsx";
 import Booking from "./components/Booking.jsx";
 import "./App.css";
+import Footer from "./components/Footer"; 
 
+
+<div className="App">
+  <Navbar setActivePage={setActivePage} />
+  {renderPage()}
+  <Footer />
+</div>
 function App() {
   const [activePage, setActivePage] = useState("Home");
 
