@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../assets/images/Image.jpeg'; // Adjust path as needed
-
+import logo from '../assets/images/Image.jpeg'; 
+import Header from './components/Header.css';
+<img src={logo} alt="HQ Detailers Logo" className="logo" />
 function Header() {
   return (
     <header style={{ backgroundColor: '#1a1a1a', padding: '1rem' }}>
-      <img src={logo} alt="HQ Detailers Logo" className="logo" />
       <img
         src={logo}
         alt="HQ Detailers Logo"
