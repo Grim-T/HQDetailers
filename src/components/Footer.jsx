@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaArrowUp } from "react-icons/fa";
-import "../styles/Footer.css";
+import "../components/Footer.css";
 
 function Footer() {
   const scrollToTop = () => {
