@@ -7,7 +7,7 @@ function Header() {
       <img
         src={logo}
         alt="HQ Detailers Logo"
-        style={{ width: '400px', height: 'auto' }}
+        style={{ width: '360px', height: 'auto' }}
       />
     </header>
   );
