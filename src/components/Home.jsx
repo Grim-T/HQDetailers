@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
 
-import exteriorImg from "../assets/exterior.jpg";
-import interiorImg from "../assets/interior.jpg";
-import mobileImg from "../assets/mobile.jpg";
+//import exteriorImg from "../assets/exterior.jpg";
+//import interiorImg from "../assets/interior.jpg";
+//import mobileImg from "../assets/mobile.jpg";
 
 function Home() {
   return (
