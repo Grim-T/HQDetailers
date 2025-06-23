@@ -1,43 +1,30 @@
-import React, { useState } from "react";
-import Header from "./components/Header.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./components/Home.jsx";
-import Services from "./components/services.jsx";
-import Portfolio from "./components/Portfolio.jsx";
-import Contact from "./components/contact.jsx";
-import Booking from "./components/Booking.jsx";
-import Footer from "./components/Footer";
-import "./App.css";
- 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
-  const [activePage, setActivePage] = useState("Home");
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Booking from './pages/Booking';
+import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-  const renderPage = () => {
-    switch (activePage) {
-      case "Home":
-        return <Home />;
-      case "Services":
-        return <Services />;
-      case "Portfolio":
-        return <Portfolio />;
-      case "Contact":
-        return <Contact />;
-      case "Booking":
-        return <Booking />;
-      default:
-        return <Home />;
-    }
-  };
+import './index.css';
 
+const App = () => {
   return (
-    <div className="app">
-      <Header />
-      <Navbar setActivePage={setActivePage} />
-      <main>{renderPage()}</main>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
